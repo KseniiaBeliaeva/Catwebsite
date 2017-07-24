@@ -1,0 +1,844 @@
+
+ .wrapper {
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0 10px 10px 0;
+    line-height: 1.5;
+ }
+ .header-name {
+        font-family: 'Cabin Sketch', cursive;
+    font-size: 400%;
+    /* padding-left: 31%; */
+    /* width: 100%; */
+    margin: 0;
+    color: rgb(255, 191, 0);
+    font-stretch: normal;
+    text-align: center;
+ }
+ .main_page_text{
+       float: right;
+    color: white;
+    font-size: 200%;
+    font-family: 'Merriweather', serif;
+    margin-top: 1%;
+    display: block;
+    margin: 0;
+ }
+ .main_page_text-donatenow {
+ color:white;
+  font-size: 25%;
+  text-align: center;
+
+ }
+ .menu {
+     position:fixed;
+     width:15%;
+
+
+ }
+ .ul-menu {
+     list-style-type: none;
+    size: 15%;
+    margin: 0;
+    padding: 0;
+    
+    
+ }
+
+
+.li-menu a {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 150%;
+    display: block;
+    color: black;
+    padding: auto;
+    line-height: 2;
+    text-decoration: none;
+    border-bottom: 1px solid gray;
+    text-align: center;
+}
+
+.li-menu a:hover {
+    background-color: cornflowerblue;
+    color: white;
+}
+.active {
+    background-color: cornflowerblue;
+    color: gray;
+}
+.body-main_page {
+  height: 120px;  
+  font-size: 150%;
+  background-image: url("site/img/mainpageimg.jpeg");
+  background-size: 100%;
+  background-position:15% 56%;
+  background-repeat: no-repeat;
+  margin-top: 0;
+      box-shadow: 0 0 10px 0;
+}
+
+/*DONATION FORM*/
+.donation-div {
+    margin: 0 auto;
+    width: 80%;
+}
+.donation-form__h1 {
+    font-family: 'Cabin Sketch', cursive;
+      color:cornflowerblue;
+    position: relative;
+    left: 32%;
+
+}
+
+.span-required {
+    color: deeppink;
+}
+#fname{
+     width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+#fname:focus {
+  border: 1px solid cornflowerblue;
+}
+#lname:focus {
+  border: 1px solid cornflowerblue;
+}
+#email-form:focus {
+  border: 1px solid cornflowerblue;
+}
+#phone-form:focus {
+  border: 1px solid cornflowerblue;
+}
+#lname {
+     width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#country-form {
+      width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+#email-form {
+       width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+#phone-form {
+       width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+#phone-form:focus {
+  border: 1px solid cornflowerblue;
+}
+#birthdate-form {
+     width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+#credit-card-form {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+#credit-card-form:focus {
+  border: 1px solid cornflowerblue;
+}
+#credit-card-name-form {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+#credit-card-name-form:focus {
+  border: 1px solid cornflowerblue;
+}
+#cr-card-expirymonth-form {
+      width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+#cr-card-expiryyear-form{
+  width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+#crcard-ccv-form {
+    padding: 1%;
+}
+#crcard-ccv-form:focus {
+  border: 1px solid cornflowerblue;
+}
+#submit-button-form {
+     width: 20%;
+background-color:#FFBF00;
+    color: azure;
+        padding: 1%;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size:100%;
+}
+#submit-button-form:hover {
+    background-color: #f39521;
+
+}
+
+
+#amount-form {
+    width: 50%;
+    color: royalblue;
+    padding: 1%;
+}
+#amount-form:focus{
+  border: solid cornflowerblue;
+}
+
+/*END OF DONATION FORM SECTION*/
+
+
+.on-photo-text {
+    float:right;
+     color:white; 
+     padding-right: 20px;
+     font-size: 45px; 
+     font-family: 'Merriweather', serif;
+}
+.container {
+    margin-left: 18%;
+    padding: 1%;
+   padding-bottom: 0;
+   transition: width 1s;
+
+}
+
+.avaliable-pets_photo {
+    width: 34%;
+    height: 20%;
+    float: left;
+    clear: both;
+    border-radius: 10px; 
+      opacity: 0.9;
+    transition: width 1s;
+    box-sizing: border-box;
+
+}
+.avaliable-pets_photo:hover {
+    opacity: 1;
+   padding: 1px;
+}
+.avaliable-pets_description {
+    width: 60%;
+    float: left;
+    margin-left: 15px;
+    margin-top: 0px; 
+    font-size: 20px;
+    text-align: justify;
+  transition: width 1s;
+}
+.adopt-pet-button {
+float: left;
+ width: 32%;
+ border-radius: 5px;
+ padding: 5px;
+ margin-bottom: 45px;
+ font-size: 15px;
+ transition-duration: 0.4s;
+ border:none;
+ color: white;
+ background-color: rgb(255, 152, 0);
+ margin-left: 35%;
+ box-sizing: border-box;
+ 
+}
+.adopt-pet-button:hover {
+
+ background-color:rgba(255, 152, 0, 0.69);
+  color: white;
+ 
+ box-sizing: border-box;
+
+}
+.center-header {
+        font-size: 200%;
+      text-align: center;
+  font-family: 'Merriweather', serif;
+    margin-top: 2%;
+
+}
+.header__colored {
+  font-family: 'Merriweather', serif;
+    margin-top: 2%;
+    text-align: center;
+    color: cornflowerblue;
+}
+
+.font-for-all {
+  font-family: serif;
+    font-size: 20px;
+}
+#map {
+    width: 600px;
+    height: 400px;
+}
+
+.avaliable-pets_records {
+    width: 60%;
+    float: left;
+    font-size: 20px;
+    list-style-type: none;
+}
+.kitten-care-header {
+    color: cornflowerblue;
+    font-weight: bold;
+    list-style-position: inside;
+    
+}
+.kitten-care-ul {
+    list-style-type: circle;
+    border-radius: 15px;
+    padding-bottom: 5px;
+    float: left;
+    list-style-position: inside;
+}
+
+.kitten-care-bold_text {
+    font-weight: bold;
+}
+.highlited-text {
+    color: rgb(255, 152, 0);
+}
+
+.first-IMG {
+width:38%;
+float: right;
+overflow: hidden;
+margin: 0;
+}
+.first-IMG:hover {
+box-shadow: 2px;
+}
+.second-IMG {
+  width:100%;
+  float:left;
+  margin-right:2%;
+   margin-bottom:2%;
+}
+.third-IMG {
+ float:right;
+ width:50%;
+}
+.fourth-IMG {
+ margin:0;
+ width:100%;
+
+}
+#phone-icon1 {
+   width: 40px;
+    height: 30px;
+    background-image: url("site/img/icons.png");
+}
+.locations-map1 {
+    width: 49%;
+    float: left;
+    margin-right:1%; 
+}
+.locations-map2 {
+    width: 49%;
+     float: left;
+     margin-right: 1%;
+}
+.clr {
+    clear: both;
+}
+.advBanner {
+    width: 100%;
+    margin: 0 auto;
+    background-color: gold;
+    display: flow-root;
+    margin-top: 2px;
+}
+
+.advBanner h1{
+   padding-left: 15%;
+}
+
+.EmergencyImg {
+    width: 19%;
+    float: left;
+    padding: 2% 5%;
+}
+footer {
+    background-color: rgb(173, 199, 245);
+    text-align: center;
+    padding: 10px 0 0 0;
+    line-height: 1.7em;
+    border-radius: 4px;
+    color: black;
+}
+.ul-menu-footer{
+    padding:0;
+}
+.li-menu-footer {
+    padding-right: 1%;
+    display:inline;
+}
+.contacts-float_left {
+    width: 40%;
+    float: left;
+    font-family: 'EB Garamond', serif;
+
+}
+
+.mapGoogle {
+    width: 100%;
+  clear: both;
+}
+
+.vets2 {
+    width:12%;
+}
+.vets3 {
+    width:12%;
+}
+.vets1 {
+    width: 11%;
+}
+
+.main_page__vets {
+    float: left;
+}
+.main_page__vets{
+    float: left;
+}
+
+.backtotop {
+    text-align:center;
+    width:15%;
+    text-decoration:none;
+}
+
+/*-----------------------------!!!!!---------tablet/ipads (portrait and landscape)*/
+@media only screen and (min-width:768px) and (max-width:1024px){
+ .wrapper {
+     size: 80%;
+     transition: width 2s;
+ }
+
+ .header-name {
+    font-size: 288%;
+    margin: 0 36%;
+    width: 100%;
+ }
+ 
+ .menu {
+   width: 100%;
+   position: inherit;
+   transition: width 2s;
+ }
+ .ul-menu {
+     list-style-type: none;
+    clear: both;
+    transition: width 2s;
+  
+ }
+ .li-menu a{
+     border-bottom: 1px solid gray;
+     font-size: 100%;
+ }
+ .container {
+     clear:both;
+   margin: 0;
+     float: none;
+ }
+.body-main_page {
+    width: 100%;
+    background-position: 15% 74%;
+    transition: width 1s;
+}
+.main_page_text {
+  
+    font-size: xx-large;
+}
+.center-header {
+      font-size: 200%;
+}
+.avaliable-pets_photo {
+    width: 50%;
+    margin: 1% 25% 3% 25%;
+    transition: width 2s;
+}
+.avaliable-pets_description {
+   float: left;
+    clear: both;
+    width: 100%;
+    margin: 0;
+    transition: height 2s;
+}
+.avaliable-pets_records {
+     float: left;
+     padding-left: 0;
+    clear: both;
+    width: 100%;
+    margin: 1% 0 3% 0;
+    transition: height 2s;
+}
+.adopt-pet-button {
+   margin-bottom: 2%;
+   margin-left: 0;
+   width: 50%;
+}
+.kitten-care-ul {
+   padding-left: 0;
+}
+
+}
+
+/*-----------------------------!!!!!---------/*smaller tablets (portrait and landscape)*/
+@media only screen and (min-width:569px) and (max-width:767px){
+
+.wrapper {
+     width: 100%;
+      margin: 0;
+   
+     transition: width 2s;
+ }
+ .header-name {
+    font-size: 255%;
+    width: 100%;
+ text-align: center;
+ }
+ .menu {
+   width: 100%;
+   position: initial;
+   transition: width 2s;
+ }
+ .ul-menu {
+     list-style-type: none;
+    clear: both;
+
+  
+ }
+ .li-menu a{
+     border-bottom: 1px solid gray;
+     font-size: 100%;
+ }
+ .container {
+     clear:both;
+   margin: 0;
+     float: none;
+ }
+.body-main_page {
+    width: 100%;
+    background-position: 15% 74%;
+    transition: width 1s;
+}
+.main_page_text {
+    float: right;
+    line-height: 1.5;
+    width: 35%;
+    font-size: x-large;
+}
+.avaliable-pets_photo {
+    width: 50%;
+    margin: 1% 25% 3% 25%;
+    transition: width 2s;
+}
+.avaliable-pets_description {
+   float: left;
+    clear: both;
+    width: 100%;
+    margin: 0;
+    transition: height 2s;
+}
+.avaliable-pets_records {
+     float: left;
+    clear: both;
+       padding-left: 0;
+    width: 100%;
+  margin: 1% 0 3% 0;
+    transition: height 2s;
+}
+.adopt-pet-button {
+   margin-bottom: 2%;
+   margin-left: 0;
+   width: 50%;
+   font-size: small;
+}
+.first-IMG {
+    width: 100%;
+    transition: width 1s;
+}
+.kitten-care-ul {
+    padding-left: 0;
+}
+.FAQ-kitten-care {
+    padding-left: 0;
+}
+}
+
+/*SMARTPHONES (portrait and landscape)*/
+@media only screen and (min-width:240px) and (max-width:568px){
+.wrapper {
+    width: 100%;
+      margin: 0;
+     transition: width 2s;
+ }
+ 
+ .header-name {
+    width: 100%;
+    font-size: 220%;
+ text-align: center;
+ }
+ .menu {
+   width: 100%;
+   position: inherit;
+   transition: width 2s;
+ }
+ .ul-menu {
+     list-style-type: none;
+    clear: both;
+    transition: width 2s;
+  
+ }
+ .li-menu a{
+     border-bottom: 1px solid gray;
+     font-size: 100%;
+ }
+ .container {
+     clear:both;
+   margin: 0;
+     float: none;
+ }
+.body-main_page {
+    width: 100%;
+    transition: width 1s;
+    background-position: 16% 71%;
+}
+.main_page_text {
+      font-size: smaller;
+    margin-top: 8%;
+    margin-right: 2%;
+}
+.center-header {
+      font-size: 200%;
+}
+.avaliable-pets_photo {
+    width: 50%;
+    margin: 1% 25% 3% 25%;
+    transition: width 2s;
+}
+.avaliable-pets_description {
+   float: left;
+    clear: both;
+    width: 100%;
+    margin: 0;
+    transition: height 2s;
+}
+.avaliable-pets_records {
+     float: left;
+    clear: both;
+       padding-left: 0;
+    width: 100%;
+  margin: 1% 0 3% 0;
+    transition: height 2s;
+}
+.adopt-pet-button {
+    font-size: x-small;
+    padding: 2%;
+    width: 50%;
+    margin-bottom: 2%;
+    margin-left: 0;
+}
+.first-IMG {
+  width: 100%;
+    float: left;
+    padding-bottom: 5%;
+    transition: width 2s;
+}
+.second-IMG {
+  width: 100%;
+    float: none;
+    padding-bottom: 3%;
+     transition: width 2s;
+}
+.third-IMG {
+  width: 100%;
+    float: none;
+    padding-bottom: 3%;
+     transition: width 2s;
+}
+.kitten-care-ul {
+    padding-left: 0;
+}
+.fourth-IMG {
+  width: 100%;
+    float: none;
+    padding-bottom: 3%;
+     transition: width 2s;
+}
+.mapGoogle {
+    width: 100%;
+}
+footer {
+    width: 100%;
+}
+.ul-menu-footer{
+    padding-left: 0;
+}
+
+
+}
+
+
+/*very small SMARTPHONES (portrait and landscape)*/
+/*@media only screen and (max-width:240px) {
+.wrapper {
+    width: 100%;
+      margin: 0;
+   
+     transition: width 2s;
+ }
+ .header-name {
+    width: 100%;
+    font-size: 220%;
+ text-align: center;
+ }
+ .menu {
+   width: 100%;
+   position: inherit;
+   transition: width 2s;
+ }
+ .ul-menu {
+     list-style-type: none;
+    clear: both;
+    transition: width 2s;
+  
+ }
+ .li-menu a{
+     border-bottom: 1px solid gray;
+     font-size: 100%;
+ }
+ .container {
+     clear:both;
+   margin: 0;
+     float: none;
+ }
+.body-main_page {
+    width: 100%;
+    transition: width 1s;
+    background-position: 16% 71%;
+}
+.main_page_text {
+      font-size: smaller;
+    margin-top: 8%;
+    margin-right: 2%;
+}
+.center-header {
+      font-size: 200%;
+}
+.avaliable-pets_photo {
+    width: 50%;
+    margin: 1% 25% 3% 25%;
+    transition: width 2s;
+}
+.avaliable-pets_description {
+   float: left;
+    clear: both;
+    width: 100%;
+    margin: 0;
+    transition: height 2s;
+}
+.avaliable-pets_records {
+     float: left;
+    clear: both;
+    width: 100%;
+  margin: 1% 0 3% 0;
+    transition: height 2s;
+}
+.adopt-pet-button {
+    font-size: x-small;
+    padding: 2%;
+    width: 50%;
+    margin-bottom: 2%;
+    margin-left: 0;
+}
+.first-IMG {
+  width: 100%;
+    float: left;
+    padding-bottom: 5%;
+    transition: width 2s;
+}
+.second-IMG {
+  width: 100%;
+    float: none;
+    padding-bottom: 3%;
+     transition: width 2s;
+}
+.third-IMG {
+  width: 100%;
+    float: none;
+    padding-bottom: 3%;
+     transition: width 2s;
+}
+.kitten-care-ul {
+    padding-left: 0;
+}
+.fourth-IMG {
+  width: 100%;
+    float: none;
+    padding-bottom: 3%;
+     transition: width 2s;
+}
+.mapGoogle {
+    width: 100%;
+}
+footer {
+    width: 100%;
+}
+
+} */
