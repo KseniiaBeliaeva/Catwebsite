@@ -383,14 +383,14 @@ box-shadow: 2px;
     background-image: url("site/img/icons.png");
 }
 .locations-map1 {
-    width: 49%;
-    float: left;
-    margin-right:1%; 
+    width: 100%;
+
+  
 }
 .locations-map2 {
-    width: 49%;
-     float: left;
-     margin-right: 1%;
+    width: 100%;
+
+  
 }
 .clr {
     clear: both;
@@ -534,6 +534,15 @@ footer {
 .kitten-care-ul {
    padding-left: 0;
 }
+.locations-map1 {
+      width: 100%;
+  margin: 0 auto;
+}
+.locations-map2{
+      width: 100%;
+  margin: 0 auto;
+    padding-top: 14px;
+}
 
 }
 
@@ -618,6 +627,16 @@ footer {
 .FAQ-kitten-care {
     padding-left: 0;
 }
+ .locations-map1 {
+      width: 100%;
+  margin: 0 auto;
+}
+.locations-map2{
+      width: 100%;
+  margin: 0 auto;
+    padding-top: 14px;
+} 
+
 }
 
 /*SMARTPHONES (portrait and landscape)*/
@@ -728,6 +747,16 @@ footer {
 }
 .ul-menu-footer{
     padding-left: 0;
+}
+.locations-map1 {
+      width: 100%;
+  margin: 0 auto;
+    padding-bottom: 14px;
+}
+.locations-map2{
+      width: 100%;
+  margin: 0 auto;
+    padding-top: 14px;
 }
 
 
