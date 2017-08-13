@@ -50,17 +50,9 @@
   .donation-top-link{
 color:white;
 text-decoration:none;
-      margin-right: 5%;
   
 }
-    .menu__zero-top {
-        position: fixed;
-    top: 0px;
-    left: 70px;
-    width: 15%;
-  transition: 4s;
 
-} 
 
  .menu {
        width: 15%;
@@ -93,10 +85,7 @@ text-decoration:none;
     background-color: cornflowerblue;
     color: white;
 }
-.active {
-    background-color: cornflowerblue;
-    
-}
+
 .body-main_page {
   height: 120px;  
   font-size: 150%;
@@ -502,7 +491,32 @@ color: white;
 }
 
 /*-----------------------------!!!!!---------tablet/ipads (portrait and landscape)*/
+@media (min-width:1024px){
+   .menu__zero-top {
+        position: fixed;
+    top: 0px;
+    left: 70px;
+    width: 15%;
+  transition: 4s;
+
+} 
+}
+
+
+
 @media only screen and (min-width:768px) and (max-width:1024px){
+    .menu__zero-top {
+        position: fixed;
+    top: 0px;
+    left: 70px;
+    width: 15%;
+  transition: 4s;
+
+} 
+    .active {
+    background-color: cornflowerblue;
+    
+}
  .wrapper {
      size: 80%;
      transition: width 2s;
