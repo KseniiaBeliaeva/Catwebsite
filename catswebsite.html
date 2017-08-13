@@ -3,38 +3,45 @@
 <title>Where cats wait for you.</title>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="catswebsite.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Yrsa" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="catswebsite.css"> <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="normalize.css"> <!--normalize css-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet"> <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Yrsa" rel="stylesheet"> <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet"> <!-- Google fonts -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- W3.CSS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <!--JQuery-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Mobile dev-s-->
 
 </head>
 
+
+<!-- WRAPPER -->
+
 <body class="wrapper">
 
-
+    <!-- HEADER -->
     <div class="body-main_page">
         <h1 class="main_page_text">
-            <a href="catswebsite-donate.html" style="color:white;text-decoration:none;">Save life for $1!
+            <a href="catswebsite-donate.html" class="donation-top-link">Save life for $1!
                 <p class="main_page_text-donatenow";>Donate today.</a></p>
         </h1>
     </div>
+
+    <!-- LEFT MENU -->
     <div class="menu">
-
-        <!--<img src="site/img/catPerson.jpg" style="width: 120px; height: 120px; display: block;">-->
-
-
-        <ul class="ul-menu">
-            <li class="li-menu active"><a href="catswebsite.html">Home</a></li>
-            <li class="li-menu"><a href="catswebsite-adoptacat.html">Adopt a cat</a></li>
-            <li class="li-menu"><a href="catswebsite-donate.html">Donate</a></li>
-            <li class="li-menu"><a href="catswebsite-faq.html">FAQ</a></li>
-            <li class="li-menu"><a href="catswebsite-contactus.html">Contacts</a></li>
+        <ul class="menu-container">
+            <li class="menu-links"><a href="catswebsite.html">Home</a></li>
+            <li class="menu-links"><a href="catswebsite-adoptacat.html">Adopt a cat</a></li>
+            <li class="menu-links"><a href="catswebsite-donate.html">Donate</a></li>
+            <li class="menu-links"><a href="catswebsite-faq.html">FAQ</a></li>
+            <li class="menu-links"><a href="catswebsite-contactus.html">Contacts</a></li>
 
         </ul>
     </div>
+
+    <!-- Container -->
 
     <div class="container" id="top">
         <h1 class="header-name">PUFFY PAWS</h1>
@@ -49,15 +56,14 @@
             all of our services which help improve the lives of Australian animals. Most of this money comes from public
             donations and fundraising initiatives, as well as business partnerships, grants and RSPCA patrons.</p>
 
+        <!-- W3 CSS -->
         <ul class="w3-ul w3-card-4">
             <li class="w3-padding-16">
-
                 <img src="site/img/vet1.jpg" class="w3-left w3-circle w3-margin-right" style="width:50px">
                 <span class="w3-large">Dr.ROBIN ZELESCO</span><br>
                 <span>Veterinary surgeon</span>
             </li>
             <li class="w3-padding-16">
-
                 <img src="site/img/vet2.jpg" class="w3-left w3-circle w3-margin-right" style="width:50px">
                 <span class="w3-large">Dr.JULIA ADAMS</span><br>
                 <span>Julia graduated from Melbourne University in 1997 and gained valuable experience in vet practices in the northern suburbs
@@ -72,45 +78,42 @@
             </li>
         </ul>
 
+        <!-- LOCATION AND SERVICES-->
 
         <h2 class="center-header__sm">Location and services</h2>
         <p>RSPCA can offer a number of services which assist in caring for animals and provide relevant information and advice
             to help educate the community on animal welfare issues and concerns.</p>
 
-            <iframe class="locations-map1" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d50380.19649284257!2d144.65140149196654!3d-37.88924167875359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x6ad6859ef179344f%3A0x300c7b96067b3fd5!2s9+Gavan+Ct%2C+Werribee+VIC+3030!3m2!1d-37.891147!2d144.656623!5e0!3m2!1sen!2sau!4v1496114070824"
-            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe class="locations-map" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d50380.19649284257!2d144.65140149196654!3d-37.88924167875359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x6ad6859ef179344f%3A0x300c7b96067b3fd5!2s9+Gavan+Ct%2C+Werribee+VIC+3030!3m2!1d-37.891147!2d144.656623!5e0!3m2!1sen!2sau!4v1496114070824"
+            allowfullscreen></iframe>
 
         <div class="clr">
         </div>
-        <div class="advBanner">
-            <img class="EmergencyImg" src="site/img/24hrs.png">
+        <div class="advBanner"><span>&#43;</span>
             <h1>Emergency case?</h1>
             <p>Please phone <a href="#" style="color:red; font-weight:bold;">(04)112 11 22</a> to get our out-of-hours service.</p>
         </div>
 
     </div>
 
+
+    <!-- FOOTER MENU -->
+
     <footer>
 
-        <ul class="ul-menu-footer">
-            <li class="li-menu-footer"><a href="catswebsite.html">Home</a></li>
-            <li class="li-menu-footer"><a href="catswebsite-adoptacat.html">Adopt a cat</a></li>
-            <li class="li-menu-footer"><a href="catswebsite-donate.html">Donate</a></li>
-            <li class="li-menu-footer"><a href="catswebsite-faq.html">FAQ</a></li>
-            <li class="li-menu-footer"><a href="catswebsite-contactus.html">Contacts</a></li>
+        <ul class="menu-container-footer">
+            <li class="menu-links-footer"><a href="catswebsite.html">Home</a></li>
+            <li class="menu-links-footer"><a href="catswebsite-adoptacat.html">Adopt a cat</a></li>
+            <li class="menu-links-footer"><a href="catswebsite-donate.html">Donate</a></li>
+            <li class="menu-links-footer"><a href="catswebsite-faq.html">FAQ</a></li>
+            <li class="menu-links-footer"><a href="catswebsite-contactus.html">Contacts</a></li>
         </ul>
 
         <p>Copyright &copy; Ksenia Beliaeva</p>
     </footer>
+
+ <script src="catswebsite-leftmenu-js.js"></script> <!--LEFT MENU MARGIN_TOP-0 ON SCROLLING -->
+
 </body>
-
-
-
-
-
-
-
-
-
 
 </html>

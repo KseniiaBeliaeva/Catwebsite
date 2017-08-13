@@ -6,70 +6,81 @@
     <link rel="stylesheet" type="text/css" href="catswebsite.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Yrsa" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Mobile dev-s-->
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <!--normalize css-->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <!--/JQuery-->
+    <meta charset="utf-8">
 
 
 </head>
+<!--WRAPPER-->
 
 <body class="wrapper">
 
-
+    <!-- TOP MENU -->
     <div class="body-main_page">
         <h1 class="main_page_text">
-            <a href="catswebsite-donate.html" style="color:white;text-decoration:none;">Save life for $1!<p class="main_page_text-donatenow";>Donate today.</a></p>
+            <a href="catswebsite-donate.html" class="donation-top-link">Save life for $1!<p class="main_page_text-donatenow";>Donate today.</a></p>
         </h1>
     </div>
+
+    <!-- MENU CONTAINER -->
     <div class="menu">
-        <!-- <img src="site/img/paw.png" style="width: 120px; height: 120px; display: block;">-->
-
-
-        <ul class="ul-menu">
-            <li class="li-menu active"><a href="catswebsite.html">Home</a></li>
-            <li class="li-menu"><a href="catswebsite-adoptacat.html">Adopt a cat</a></li>
-            <li class="li-menu"><a href="catswebsite-donate.html">Donate</a></li>
-            <li class="li-menu"><a href="catswebsite-faq.html">FAQ</a></li>
-            <li class="li-menu"><a href="catswebsite-contactus.html">Contacts</a></li>
+        <ul class="menu-container">
+            <li class="menu-links active"><a href="catswebsite.html">Home</a></li>
+            <li class="menu-links"><a href="catswebsite-adoptacat.html">Adopt a cat</a></li>
+            <li class="menu-links"><a href="catswebsite-donate.html">Donate</a></li>
+            <li class="menu-links"><a href="catswebsite-faq.html">FAQ</a></li>
+            <li class="menu-links"><a href="catswebsite-contactus.html">Contacts</a></li>
 
         </ul>
     </div>
+
     <div class="container" id="top">
-            <h1 class="center-header">Contacts and address:</h1>
-            <div class="contacts-float_left">
-                <h1 class="font-for-all header__colored">Opening hours:</h1>
-                <p class="font-for-all">Monday-Friday: 7.00am-9.00pm;</p>
-                <p class="font-for-all">Saturday: 8.00am-7.00pm;</p>
-                <p class="font-for-all">Sunday: 8.00am-7.00pm;</p>
-                <h4 class="font-for-all header__colored">Address:</h4>
-                <h4 class="font-for-all"><a href="https://goo.gl/maps/2GR7TNmVSYR2">23 Kitten parade, South Murrcat, Australia, 3010</a></h4>
-            </div>
-            <div class="contacts-float_left">
-                <h4 class="font-for-all header__colored">Contact phone numbers:</h4>
-                <p class="font-for-all">8-800-200-90-10</p>
-                <p class="font-for-all">8-800-200-80-90</p>
-               
-            </div>
-            <div class="vet-photo">
-            </div>
-                <iframe class="mapGoogle" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12608.379772234086!2d144.95439619080744!3d-37.81124507368189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b8c21cb29b%3A0x1c045678462e3510!2sCollins+St%2C+Melbourne+VIC+3000!5e0!3m2!1sen!2sau!4v1494556548206"
-                    width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-            <a href="#top"class="backtotop"><p>Back to the top<img src="site/img/up-icon.png" alt="back to the top icon" style="width:3%;padding-left:2px;"></p>
-                </a>
-            <div class="clr"></div>
+        <h1 class="center-header">Contacts and address:</h1>
+        <div class="contacts-float_left">
+            <h1 class="font-for-all header__colored">Opening hours:</h1>
+            <p class="font-for-all">Monday-Friday: 7.00am-9.00pm;</p>
+            <p class="font-for-all">Saturday: 8.00am-7.00pm;</p>
+            <p class="font-for-all">Sunday: 8.00am-7.00pm;</p>
+            <h4 class="font-for-all header__colored">Address:</h4>
+            <h4 class="font-for-all"><a href="https://goo.gl/maps/2GR7TNmVSYR2">23 Kitten parade, South Murrcat, Australia, 3010</a></h4>
+        </div>
+        <div class="contacts-float_left">
+            <h4 class="font-for-all header__colored">Contact phone numbers:</h4>
+            <p class="font-for-all">8-800-200-90-10</p>
+            <p class="font-for-all">8-800-200-80-90</p>
+
+        </div>
+        <div class="vet-photo">
+        </div>
+        <iframe class="locations-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12608.379772234086!2d144.95439619080744!3d-37.81124507368189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b8c21cb29b%3A0x1c045678462e3510!2sCollins+St%2C+Melbourne+VIC+3000!5e0!3m2!1sen!2sau!4v1494556548206"
+            allowfullscreen></iframe>
+        <a href="#top" class="backtotop">
+            <p>Back to the top<img src="site/img/up-icon.png" alt="back to the top icon" style="width:3%;padding-left:2px;"></p>
+        </a>
+        <div class="clr"></div>
     </div>
-            <footer>
-              
-                <ul class="ul-menu-footer">
-                <li class="li-menu-footer"><a href="catswebsite.html">Home</a></li>
-                <li class="li-menu-footer"><a href="catswebsite-adoptacat.html">Adopt a cat</a></li>
-                <li class="li-menu-footer"><a href="catswebsite-donate.html">Donate</a></li>
-                <li class="li-menu-footer"><a href="catswebsite-faq.html">FAQ</a></li>
-                <li class="li-menu-footer"><a href="catswebsite-contactus.html">Contacts</a></li>
-                </ul>
-                   
-                    <p>Copyright &copy; Ksenia Beliaeva</p></footer>
+    <footer>
+
+        <ul class="menu-container-footer">
+            <li class="menu-links-footer"><a href="catswebsite.html">Home</a></li>
+            <li class="menu-links-footer"><a href="catswebsite-adoptacat.html">Adopt a cat</a></li>
+            <li class="menu-links-footer"><a href="catswebsite-donate.html">Donate</a></li>
+            <li class="menu-links-footer"><a href="catswebsite-faq.html">FAQ</a></li>
+            <li class="menu-links-footer"><a href="catswebsite-contactus.html">Contacts</a></li>
+        </ul>
+
+        <p>Copyright &copy; Ksenia Beliaeva</p>
+    </footer>
+    <script src="catswebsite-leftmenu-js.js"></script>
+    <!--LEFT MENU MARGIN_TOP-0 ON SCROLLING -->
+
 </body>
 
 </html>

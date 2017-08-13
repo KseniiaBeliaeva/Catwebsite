@@ -8,35 +8,40 @@
     <link href="https://fonts.googleapis.com/css?family=Yrsa" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
+<meta name="viewport" content="width=device-width, initial-scale=1"> <!--Mobile dev-s-->
+<link rel="stylesheet" type="text/css" href="normalize.css"> <!--normalize css-->
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<!--/JQuery-->
+<meta charset="utf-8">
 
 
 </head>
+<!--WRAPPER -->
 
 <body class="wrapper">
 
+<!--HEADER -->
 
     <div class="body-main_page">
         <h1 class="main_page_text">
-            <a href="catswebsite-donate.html" style="color:white;text-decoration:none;">Save life for $1!
+            <a href="catswebsite-donate.html" class="donation-top-link">Save life for $1!
                 <p class="main_page_text-donatenow";>Donate today.</a></p>
         </h1>
     </div>
+
+        <!-- LEFT MENU -->
+
     <div class="menu">
-
-        <!--<img src="site/img/catPerson.jpg" style="width: 120px; height: 120px; display: block;">-->
-
-
-    <ul class="ul-menu">
-        <li class="li-menu active"><a href="catswebsite.html">Home</a></li>
-        <li class="li-menu"><a href="catswebsite-adoptacat.html">Adopt a cat</a></li>
-        <li class="li-menu"><a href="catswebsite-donate.html">Donate</a></li>
-        <li class="li-menu"><a href="catswebsite-faq.html">FAQ</a></li>
-        <li class="li-menu"><a href="catswebsite-contactus.html">Contacts</a></li>
+    <ul class="menu-container">
+        <li class="menu-links"><a href="catswebsite.html">Home</a></li>
+        <li class="menu-links"><a href="catswebsite-adoptacat.html">Adopt a cat</a></li>
+        <li class="menu-links"><a href="catswebsite-donate.html">Donate</a></li>
+        <li class="menu-links"><a href="catswebsite-faq.html">FAQ</a></li>
+        <li class="menu-links"><a href="catswebsite-contactus.html">Contacts</a></li>
 
     </ul>
     </div>
+    <!-- Container -->
 
     <div class="container" id="top">
         <h1 class="center-header">Health Looking After Your Cat/Kitten</h1>
@@ -44,14 +49,7 @@
             look out for.<br>
         <h4 class="header__colored">Below are indications of a HEALTHY cat/kitten:</h4>
 
-            <!--<ul class="kitten-care-ul">
-                <li>Clear, bright eyes;</li>
-                <li>Damp but clean nose;</li>
-                <li>Ears – free of any waxy or other discharge;</li>
-                <li>Clean, shiny fur</li>
-            </ul>
-            <img src="site/img/2cats.png" alt="2 cats" style="float:right;"> -->
-            <ul class="kitten-care-ul">
+            <ul class="kitten-care-list">
                 <h4 class="header__colored">In general:</h4>
                 <li>Clear, bright eyes;</li>
                 <li>Damp but clean nose;</li>
@@ -71,7 +69,7 @@
                 <li>Remember to treat any other animals and even the household to prevent infestations! Give them lots and lots
                     of love!</li>
             </ul>
-            <ul class="kitten-care-ul">
+            <ul class="kitten-care-list">
                 <div class="FAQ-kitten-care" >
                     <h4 class="header__colored">Kitten Care: Must-Know Tips for Raising Kittens</h4>
                     <i>By Jennifer Sellers, Petfinder contributor</i>
@@ -130,7 +128,7 @@
                                 </div>
                             <img class="third-IMG" src="site/img/kitten-FAQ3.jpeg">
     
-                            <ul class="kitten-care-ul">
+                            <ul class="kitten-care-list">
                                 <li>Kittens will generally use litter boxes by instinct, however you can help teach her to use
                                     it by placing her in the box after meals and play sessions. Make sure the litter box
                                     is always available to your kitten and cleaned frequently</li>
@@ -185,7 +183,7 @@
                                 given every few weeks until she reaches 16 weeks of age. After that, your veterinarian can
                                 set her up on an adult vaccination schedule. He or she may also recommend additional vaccinations.</p>
                 </div>
-                <img class="fourth-IMG" src="site/img/kitten-FAQ4.jpg">
+                <img class="fourth-IMG" src="site/img/kitten-FAQ4.jpeg">
     </div>
 <div class="clr"></div>
    
@@ -194,15 +192,18 @@
 
     
     <footer>
-        <ul class="ul-menu-footer">
-            <li class="li-menu-footer"><a href="catswebsite.html">Home</a></li>
-            <li class="li-menu-footer"><a href="catswebsite-adoptacat.html">Adopt a cat</a></li>
-            <li class="li-menu-footer"><a href="catswebsite-donate.html">Donate</a></li>
-            <li class="li-menu-footer"><a href="catswebsite-faq.html">FAQ</a></li>
-            <li class="li-menu-footer"><a href="catswebsite-contactus.html">Contacts</a></li>
+        <ul class="menu-container-footer">
+            <li class="menu-links-footer"><a href="catswebsite.html">Home</a></li>
+            <li class="menu-links-footer"><a href="catswebsite-adoptacat.html">Adopt a cat</a></li>
+            <li class="menu-links-footer"><a href="catswebsite-donate.html">Donate</a></li>
+            <li class="menu-links-footer"><a href="catswebsite-faq.html">FAQ</a></li>
+            <li class="menu-links-footer"><a href="catswebsite-contactus.html">Contacts</a></li>
         </ul>
 
         <p>Copyright &copy; Ksenia Beliaeva</p>
     </footer>
+    <script src="catswebsite-leftmenu-js.js"></script>
+    <!--LEFT MENU MARGIN_TOP-0 ON SCROLLING -->
+
     </body>
 </html>

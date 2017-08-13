@@ -9,33 +9,49 @@
 <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script> <!--JQuery-->
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="normalize.css">
+<!--normalize css-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Mobile dev-s-->
 
 
 </head>
+<!-- WRAPPER -->
 
 <body class="wrapper">
 
+<!-- HEADER -->
 
     <div class="body-main_page">
         <h1 class="main_page_text">
-            <a href="catswebsite-donate.html" style="color:white;text-decoration:none;">Save life for $1!<p class="main_page_text-donatenow";>Donate today.</a></p>
+            <a href="catswebsite-donate.html" class="donation-top-link">
+                Save life for $1!<p class="main_page_text-donatenow";>Donate today.</a></p>
         </h1>
     </div>
+
+    <!-- LEFT MENU -->
+
     <div class="menu">
-        <!-- <img src="site/img/paw.png" style="width: 120px; height: 120px; display: block;">-->
-
-
-        <ul class="ul-menu">
-            <li class="li-menu active"><a href="catswebsite.html">Home</a></li>
-            <li class="li-menu"><a href="catswebsite-adoptacat.html">Adopt a cat</a></li>
-            <li class="li-menu"><a href="catswebsite-donate.html">Donate</a></li>
-            <li class="li-menu"><a href="catswebsite-faq.html">FAQ</a></li>
-            <li class="li-menu"><a href="catswebsite-contactus.html">Contacts</a></li>
+        <ul class="menu-container">
+            <li class="menu-links"><a href="catswebsite.html">Home</a></li>
+            <li class="menu-links"><a href="catswebsite-adoptacat.html">Adopt a cat</a></li>
+            <li class="menu-links"><a href="catswebsite-donate.html">Donate</a></li>
+            <li class="menu-links"><a href="catswebsite-faq.html">FAQ</a></li>
+            <li class="menu-links"><a href="catswebsite-contactus.html">Contacts</a></li>
 
         </ul>
     </div>
+
+        <!-- Container -->
+
     <div class="container" id="top">
         <h1 class="center-header">Avaliable for adoption:</h1>
+
+<!--IMAGE GALLERY PETS FOR ADOPTION-->
+
+        <div class="image-gallery">
         <a target="_blank" href="site/img/sadcat.jpg">
             <img src="site/img/sadcat.jpg" class="avaliable-pets_photo"></a>
         <div class="avaliable-pets_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra tortor sit amet nulla dapibus pretium.
@@ -82,7 +98,7 @@
                 <li><span class="highlited-text">Location</span>: South Werribee office.</li>
             </ul>
             <input type="button" class="adopt-pet-button" value="Book an appointment"></div>
-
+        </div>
 
    
   
@@ -92,17 +108,40 @@
         </a>
     </div>
     </div>
+<!--FOOTER-->
     <footer>
-        <ul class="ul-menu-footer">
-                <li class="li-menu-footer"><a href="catswebsite.html">Home</a></li>
-            <li class="li-menu-footer"><a href="catswebsite-adoptacat.html">Adopt a cat</a></li>
-            <li class="li-menu-footer"><a href="catswebsite-donate.html">Donate</a></li>
-            <li class="li-menu-footer"><a href="catswebsite-faq.html">FAQ</a></li>
-            <li class="li-menu-footer"><a href="catswebsite-contactus.html">Contacts</a></li>
+        <ul class="menu-container-footer">
+                <li class="menu-links-footer"><a href="catswebsite.html">Home</a></li>
+            <li class="menu-links-footer"><a href="catswebsite-adoptacat.html">Adopt a cat</a></li>
+            <li class="menu-links-footer"><a href="catswebsite-donate.html">Donate</a></li>
+            <li class="menu-links-footer"><a href="catswebsite-faq.html">FAQ</a></li>
+            <li class="menu-links-footer"><a href="catswebsite-contactus.html">Contacts</a></li>
         </ul>
 
         <p>Copyright &copy; Ksenia Beliaeva</p>
     </footer>
+
+<!--IMG OVERLAY SCRIPT-->
+<script>
+    let $overlay = $('<div id="overlay"></div>');
+    let $image = $('<img>');
+    $overlay.append($image);
+    $('body').append($overlay);
+
+    $('.image-gallery a').click(function(event) {
+   event.preventDefault();
+   let imageLocation = $(this).attr('href');
+   $overlay.show();
+   $image.attr('src', imageLocation);
+    });
+    $overlay.click(function(){
+        $(this).hide();
+    })
+
+</script>
+<script src="catswebsite-leftmenu-js.js"></script>
+<!--LEFT MENU MARGIN_TOP-0 ON SCROLLING -->
+
     </body>
 
 
