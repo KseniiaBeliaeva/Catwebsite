@@ -58,7 +58,7 @@ text-decoration:none;
 }
 
  .menu {
-    width: 16.6666666%; /*   (15% [fixed menu width when scrolling] / 90% [body width] ) */
+    width: 16.6666666%;  /*   (15% [fixed menu width when scrolling] / 90% [body width] ) */
     position: absolute;
  }
 
@@ -390,7 +390,7 @@ color: white;
     background-color: white;
     position: fixed;
     top: 0px;
-    width: inherit;
+    width: 15%;
   transition: 1s;
 
 } 
