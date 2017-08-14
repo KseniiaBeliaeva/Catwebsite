@@ -53,19 +53,24 @@ text-decoration:none;
   
 }
 
+.menu-links.active {
+    background-color: cornflowerblue;
+}
 
  .menu {
-       width: 15%;
-    position: fixed;
- 
-
+    width: 16.6666666%; /*   (15% [fixed menu width when scrolling] / 90% [body width] ) */
+    position: absolute;
  }
+
+.menu::after {
+    content: "";
+    clear: both;
+    display: block;
+}
  .menu-container {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    
-    
  }
 
 
@@ -74,7 +79,6 @@ text-decoration:none;
     font-size: 150%;
     display: block;
     color: black;
-    padding: auto;
     line-height: 2;
     text-decoration: none;
     border-bottom: 1px solid gray;
@@ -113,7 +117,7 @@ text-decoration:none;
 .span-required {
     color: deeppink;
 }
-#fname{
+.input-form{
      width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -123,115 +127,14 @@ text-decoration:none;
     box-sizing: border-box;
 
 }
-#fname:focus {
+.input-form_halfwidth {
+    width:50% !important;
+}
+.input:focus {
   border: 1px solid cornflowerblue;
-}
-#lname:focus {
-  border: 1px solid cornflowerblue;
-}
-#email-form:focus {
-  border: 1px solid cornflowerblue;
-}
-#phone-form:focus {
-  border: 1px solid cornflowerblue;
-}
-#lname {
-     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-#country-form {
-      width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box; 
-}
-#email-form {
-       width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box; 
-}
-#phone-form {
-       width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box; 
-}
-#phone-form:focus {
-  border: 1px solid cornflowerblue;
-}
-#birthdate-form {
-     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box; 
-}
-#credit-card-form {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box; 
-}
-#credit-card-form:focus {
-  border: 1px solid cornflowerblue;
-}
-#credit-card-name-form {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box; 
-}
-#credit-card-name-form:focus {
-  border: 1px solid cornflowerblue;
-}
-#cr-card-expirymonth-form {
-      width: 50%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box; 
 }
 
-#cr-card-expiryyear-form{
-  width: 50%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box; 
-}
-#crcard-ccv-form {
-    padding: 1%;
-}
-#crcard-ccv-form:focus {
-  border: 1px solid cornflowerblue;
-}
+
 #submit-button-form {
      width: 20%;
 background-color:#FFBF00;
@@ -246,16 +149,6 @@ background-color:#FFBF00;
 #submit-button-form:hover {
     background-color: #f39521;
 
-}
-
-
-#amount-form {
-    width: 50%;
-    color: royalblue;
-    padding: 1%;
-}
-#amount-form:focus{
-  border: solid cornflowerblue;
 }
 
 /*END OF DONATION FORM SECTION*/
@@ -420,7 +313,8 @@ box-shadow: 2px;
     text-align: center;
     position: relative;
 }
-   .advBanner span { position: absolute;
+   .advBanner span { 
+    position: absolute;
     top: -25%;
     left: 5%;
     font-size: 150px;
@@ -493,30 +387,18 @@ color: white;
 /*-----------------------------!!!!!---------tablet/ipads (portrait and landscape)*/
 @media (min-width:1024px){
    .menu__zero-top {
-        position: fixed;
+    background-color: white;
+    position: fixed;
     top: 0px;
-    left: 70px;
-    width: 15%;
-  transition: 4s;
+    width: inherit;
+  transition: 1s;
 
 } 
 }
-
-
 
 @media only screen and (min-width:768px) and (max-width:1024px){
-    .menu__zero-top {
-        position: fixed;
-    top: 0px;
-    left: 70px;
-    width: 15%;
-  transition: 4s;
+  
 
-} 
-    .active {
-    background-color: cornflowerblue;
-    
-}
  .wrapper {
      size: 80%;
      transition: width 2s;
@@ -532,15 +414,22 @@ color: white;
    position: inherit;
    transition: width 2s;
  }
+.menu::after {
+    content: "";
+    clear: both;
+    display: block;
+}
  .menu-container {
      list-style-type: none;
     clear: both;
     transition: width 2s;
-  
+    box-shadow: inset 0px 0px 2px 0px;
  }
+
  .menu-links a{
      border-bottom: 1px solid gray;
      font-size: 100%;
+     
  }
  .container {
      clear:both;
@@ -625,6 +514,11 @@ color: white;
    position: initial;
    transition: width 2s;
  }
+.menu::after {
+    content: "";
+    clear: both;
+    display: block;
+}
  .menu-container {
      list-style-type: none;
     clear: both;
@@ -724,6 +618,12 @@ color: white;
    position: inherit;
    transition: width 2s;
  }
+
+.menu::after {
+    content: "";
+    clear: both;
+    display: block;
+}
  .menu-container {
      list-style-type: none;
     clear: both;

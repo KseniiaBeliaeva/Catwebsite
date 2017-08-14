@@ -1,9 +1,8 @@
-/*top menu position fixed on scroll*/
-
 $(window).on('scroll', function () {
-    if ($(window).scrollTop() > 60) {
+    if ($(window).scrollTop() > 120) {
         $('.menu-container').addClass('menu__zero-top');
-    } else {
+    } else { 
         $('.menu-container').removeClass('menu__zero-top');
-    }
-});
+ 
+    };
+})

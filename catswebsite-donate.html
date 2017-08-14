@@ -7,12 +7,14 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Yrsa" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<meta name="viewport" content="width=device-width, initial-scale=1"><!--Mobile dev-s-->
-<link rel="stylesheet" type="text/css" href="normalize.css"> <!--normalize css-->
-<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-<!--/JQuery-->
-<meta charset="utf-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Mobile dev-s-->
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <!--normalize css-->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <!--/JQuery-->
+    <meta charset="utf-8">
 </head>
 
 <body class="wrapper">
@@ -31,7 +33,7 @@
         <ul class="menu-container">
             <li class="menu-links"><a href="catswebsite.html">Home</a></li>
             <li class="menu-links"><a href="catswebsite-adoptacat.html">Adopt a cat</a></li>
-            <li class="menu-links"><a href="catswebsite-donate.html">Donate</a></li>
+            <li class="menu-links active"><a href="catswebsite-donate.html">Donate</a></li>
             <li class="menu-links"><a href="catswebsite-faq.html">FAQ</a></li>
             <li class="menu-links"><a href="catswebsite-contactus.html">Contacts</a></li>
 
@@ -39,50 +41,50 @@
     </div>
 
     <div class="container" id="top">
-       <!--<h1 class="header-name">PUFFY PAWS</h1> -->
+        <!--<h1 class="header-name">PUFFY PAWS</h1> -->
         <div class="donation-div">
-        <h1 class="center-header">Save life - donate today</h1>
-      
-        <h3>With your donation you can help us change the life of an animal in need.</h3>
+            <h1 class="center-header">Save life - donate today</h1>
 
-       
-            <form action="" class="donation form">
-                <p><label for="title">Title</label>
-                    <select class="select" id="title" name="title" autofocus="autofocus" autocomplete="off" required>
-            <option value="None">--None--</option>
+            <h3>With your donation you can help us change the life of an animal in need.</h3>
+
+
+            <form action="" class="donation-form">
+                <p><label for="input-form input-form_halfwidth">Title</label></p>
+    <select class="input-form input-form_halfwidth" name="title" autofocus="autofocus" autocomplete="off" required>
+           <option value="None">--None--</option>
            <option value="Mr">Mr</option>
            <option value="Mrs">Mrs</option>
            <option value="Miss">Miss</option>
            <option value="Ms">Ms</option>
            <option value="Dr">Dr</option>
-            </select>
-                </p>
-                <p><label for="fname">First Name<span class="span-required">*</span></label></p>
-                <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+    </select>
+              
+                <p><label for="input-form">First Name<span class="span-required">*</span></label></p>
+                <input type="text" class="input-form" name="firstname" placeholder="Your name.." required>
 
-                <p> <label for="lname">Last Name<span class="span-required">*</span></label></p>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                <p> <label for="input-form">Last Name<span class="span-required">*</span></label></p>
+                <input type="text" class="input-form" name="lastname" placeholder="Your last name.." required>
 
-                
-                <p><label for="country-form">Country</label></p>
-                <select id="country-form" name="country">
+
+                <p><label for="input-form">Country</label></p>
+                <select class="input-form input-form_halfwidth" name="country">
       <option value="Australia">Australia</option>
       <option value="Canada">Canada</option>
       <option value="USA">USA</option>
     </select>
-    <p> <label for="email-form">Email address<span class="span-required">*</span></label></p>
-   <input type="email" id="email-form" placeholder="example@mail.com" required>
-    <p> <label for="phone-form">Phone number<span class="span-required">*</span></label></p>
-    <input type="phone" id="phone-form" placeholder="+ 61 000 000 00 00" required>
-    <p> <label for="birthdate-form">Birth Date</label></p>
-    <input type="date" name="bday" id="birthdate-form">
- <h3>Payment Details</h3> 
-<p><label for="credit-card-form">Credit Card Number<span class="span-required">*</span></label></p>
-<input type="text" id="credit-card-form" name="credit card number" placeholder="1234 5678 9" required>
-<p><label for="credit-card-name-form">Name on Card<span class="span-required">*</span></label></p>
-<input type="text" id="credit-card-name-form" name="name on card" placeholder="John Dough" required>
-<p><label for="cr-card-expirymonth-form">Expiry date(month)<span class="span-required">*</span></label></p>
-<select  id="cr-card-expirymonth-form" name="expiry month" placeholder="Month" tabindex="12" data-parsley-id="27"required>
+                <p> <label for="input-form">Email address<span class="span-required">*</span></label></p>
+                <input type="email" class="input-form" placeholder="example@mail.com" required>
+                <p> <label for="input-form">Phone number<span class="span-required">*</span></label></p>
+                <input type="phone" class="input-form" placeholder="+ 61 000 000 00 00" required>
+                <p> <label for="input-form">Birthdate</label></p>
+                <input type="date" name="bday" class="input-form">
+                <h3>Payment Details</h3>
+                <p><label for="input-form">Credit Card Number<span class="span-required">*</span></label></p>
+                <input type="text" class="input-form" name="credit card number" placeholder="1234 5678 9" required>
+                <p><label for="input-form">Name on Card<span class="span-required">*</span></label></p>
+                <input type="text" class="input-form" name="name on card" placeholder="John Dough" required>
+                <p><label for="input-form">Expiry date(month)<span class="span-required">*</span></label></p>
+                <select class="input-form input-form_halfwidth" name="expiry month" placeholder="Month" tabindex="12" data-parsley-id="27" required>
     <option value selected>Month</option>
     <option value="1">1</option>
     <option value="2">2</option>
@@ -97,8 +99,8 @@
     <option value="11">11</option>
     <option value="12">12</option>
 </select>
-<p><label for="cr-card-expiryyear-form">Expiry date(year)<span class="span-required">*</span></label></p>
-<select id="cr-card-expiryyear-form" name="expiry year" placeholder="Year"tabindex="13" required>
+                <p><label for="input-form">Expiry date(year)<span class="span-required">*</span></label></p>
+                <select class="input-form input-form_halfwidth" name="expiry year" placeholder="Year" tabindex="13" required>
 <option value selected>Month</option>
 <option value="17">2017</option>
 <option value="18">2018</option>
@@ -113,22 +115,22 @@
 <option value="27">2027</option>
 <option value="28">2028</option>
 </select>
-<p><label for="crcard-ccv-form">CCV<span class="span-required">*</span></label></p>
-<input type="text" id="crcard-ccv-form" name="credit card CCV" placeholder="123" required>
+                <p><label for="input-form">CCV<span class="span-required">*</span></label></p>
+                <input type="text" class='input-form input-form_halfwidth' name="credit card CCV" placeholder="123" required>
 
-<p><label for="amount-form">Amount $<span class="span-required">*</span></label></p>
-<input type="text" id="amount-form" name="credit card CCV" placeholder="$1" required>
+                <p><label for="input-form">Amount $<span class="span-required">*</span></label></p>
+                <input type="text" class="input-form input-form_halfwidth" name="credit card CCV" placeholder="$1" required>
 
                 <p><input type="submit" value="Submit" id="submit-button-form"></p>
             </form>
         </div>
 
-       
-    <div class="clr">
-        <a href="#top" class="backtotop">
-            <p>Back to the top<img src="site/img/up-icon.png" alt="back to the top icon" style="width:3%;padding-left:2px;"></p>
-        </a>
-    </div>  
+
+        <div class="clr">
+            <a href="#top" class="backtotop">
+                <p>Back to the top<img src="site/img/up-icon.png" alt="back to the top icon" style="width:3%;padding-left:2px;"></p>
+            </a>
+        </div>
     </div>
     <footer>
         <ul class="menu-container-footer">
@@ -143,5 +145,6 @@
     </footer>
     <script src="catswebsite-leftmenu-js.js"></script>
     <!--LEFT MENU MARGIN_TOP-0 ON SCROLLING -->
-    </body>
+</body>
+
 </html>
